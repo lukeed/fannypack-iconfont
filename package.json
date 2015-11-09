@@ -1,0 +1,24 @@
+{
+  "name": "fannypack-iconfont",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "author": {
+    "name": "Luke Edwards",
+    "email": "luke@lukeed.com",
+    "url": "http://www.lukeed.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lukeed/fannypack-iconfont.git"
+  },
+  "keywords": ["gulp", "iconfont", "generate icon font", "fannypack", "webpack"],
+  "dependencies": {
+    "gulp-iconfont": "^3.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-nunjucks-render": "^0.2.1"
+  }
+}
