@@ -20,9 +20,7 @@
 
 
 {% for icon in icons -%}
-// Save as variable
 $icon-{{icon.name}}: "\{{icon.code}}"
-// Make class name
 .icon--{{icon.name}}:before
   content: $icon-{{icon.name}}
 
