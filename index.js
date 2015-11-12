@@ -4,6 +4,7 @@ var $         = Fannypack.$
 
 var iconfont  = require('gulp-iconfont')
 var generate  = require('./generateSass')
+// var template  = require('./template.sass')
 
 Fannypack.Tasks['iconFont'] = function(config){
   if(!config.iconFont) return
@@ -16,7 +17,7 @@ Fannypack.Tasks['iconFont'] = function(config){
     src: $.Pather.join(config.root.src, config.iconFont.src, '/*.svg'),
     dest: $.Pather.join(config.root.dest, config.iconFont.dest),
     sassDest: $.Pather.join(config.root.src, config.sass.src, config.iconFont.sassDest),
-    template: $.Pather.normalize('./gulp/tasks/iconFont/template.sass'),
+    template: $.Pather.resolve('node_modules', 'fannypack-iconfont/template.sass'),
     sassOutputName: '_icons.sass',
     fontPath: $.Pather.relative(cssPath, fontPath),
     className: 'icon',
