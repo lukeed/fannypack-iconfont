@@ -5,7 +5,7 @@ var $         = Fannypack.$
 var iconfont  = require('gulp-iconfont')
 var generate  = require('./generateSass')
 
-module.exports = function(config){
+Fannypack.Tasks['iconFont'] = function(config){
   if(!config.iconFont) return
 
   var fontPath = $.Pather.join(config.root.dest, config.iconFont.dest)
