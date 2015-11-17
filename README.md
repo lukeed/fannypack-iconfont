@@ -1,4 +1,4 @@
-# fannypack-less
+# fannypack-iconfont
 Official Fannypack task for generating an Icon Font from SVG files.
 
 ## Installation
